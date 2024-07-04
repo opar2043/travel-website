@@ -1,0 +1,449 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --textcolor:white;
+    --hovercolor:#fbc531;
+    --black: #2C3A47;
+    --3rdSection: #bdc3c7;
+}
+
+/* header section */
+#one{
+    background: url(image/img2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+#one .black{
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    position:absolute;
+    z-index: -9;
+    opacity: 0.4;
+    background-color: black;
+}
+.head{
+   width: 80%;
+   height: fit-content;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+}
+.head .logo{
+   font-size: 18px;
+   color: var(--textcolor);
+}
+.head .logo h2{
+   display: inline;
+   font-weight: 400;
+}
+.head .log{
+   margin-top: 14px;
+}
+
+.head .log a{
+    text-decoration: none;
+    display: inline;
+    padding: 8px 15px;
+    color: var(--textcolor);
+    font-size: 18px;
+    border: 3px solid var(--textcolor);
+    border-radius: 25px;
+    font-weight: 400;
+}
+.head .log a:hover{
+    background-color: var(--hovercolor);
+    border: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+/* middle */
+
+.middle{
+    width: 65%;
+    padding: 35px;
+    margin: 35px auto;
+    height: auto;
+    text-align: center;
+    z-index: 99;
+    color: var(--textcolor);
+}
+.middle h1{
+   font-size: 40px; 
+   font-family: "Anta", sans-serif;
+   letter-spacing: 4px;
+   margin-bottom: 12px;
+   margin-top: 40px;
+}
+.middle p{
+   font-size: 15px; 
+   opacity: 0.85;
+   margin-bottom: 16px;
+}
+.middle input{
+   width: 55%;
+   padding: 10px 14px;
+   outline: none;
+   border: none;
+   border-radius: 30px;
+}
+.btn{
+    width: 90px;
+    margin-left: -100px;
+    padding: 5px 8px;
+    background-image: linear-gradient(#55E6C1,#227093);
+    border: none;
+    border-radius: 15px;
+    color: var(--black);
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: var(--hovercolor);
+}
+
+
+/* destiny section */
+
+
+.destiny{
+    padding: 25px;
+    text-align: center;
+}
+
+.destiny h1{
+   margin-top: 20px;
+   font-size: 38px;
+   font-family: "Anta", sans-serif;
+   margin-bottom: 14px;
+   display: inline-block;
+}
+
+.heroDestiny{
+    width: 80%;
+    height: fit-content;
+    padding: 25px;
+    margin: 0px auto;
+    display: flex;
+}
+
+.heroDestiny .card{
+    width: 28%;
+    height: fit-content;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.38), 0 6px 20px 0 rgba(0, 0, 0, 0.34);
+    position: relative;
+    margin-right: 65px;
+    transition: 0.3s;
+}
+.heroDestiny .card:hover{
+    transform: scale(1.1);
+}
+
+.heroDestiny .taka{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    top: 150px;
+    left: 15px;
+}
+
+.heroDestiny .taka p{
+   text-align: center;
+   top: 20px;
+}
+
+.heroDestiny .card img{
+    width: 100%;
+    height: fit-content;
+}
+
+.heroDestiny .info{
+   padding: 12px;
+   align-items: left;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.heroDestiny .info h2{
+   text-align: left;
+   text-shadow: 2px 2px 2px #00000065;
+}
+
+.heroDestiny .info p{
+   text-align: justify;
+   font-size: 12px;
+   text-align-last: center;
+}
+
+.heroDestiny .info .icon{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+ }
+.heroDestiny .icon i{
+    font-size: 11px;
+ }
+
+.heroDestiny .star{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+ 
+.heroDestiny .star i{
+    font-size: 15px;
+    color: chocolate;
+}
+ 
+
+/* travelling Galary */
+
+.gallary{
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    background-color: var(--3rdSection);
+    align-items: center;
+}
+.gallary h2{
+    font-family: "Anta", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 3px 2px #00000065;
+}
+.gallary .imgs{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 30px;
+
+}
+.gallary .imgs h3{
+   font-size: 25px;
+   color: var(--black);
+   text-align: center;
+   text-shadow: 2px 3px 2px #00000065;
+   margin-top: -5px;
+}
+.gallary .imgs .child {
+   width: 21%;
+   height: 150px;
+}
+.gallary .imgs .child img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+   transition: 0.3s;
+}
+.gallary .imgs .child img:hover{
+   transform: scale(1.1);
+}
+
+.child .log{
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+.child .log a{
+    text-decoration: none;
+    display: inline;
+    padding: 6px 10px;
+    color: var(--textcolor);
+    font-size: 15px;
+    border: 3px solid var();
+    border-radius: 25px;
+    font-weight: 400;
+    background-image: linear-gradient(#55E6C1,#227093);
+    transition: 0.2s;
+}
+.child .log a:hover{
+    transform: scale(1.2);
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* offer section */
+
+#offer{
+    background: url(image/img7.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: -9;
+    background-color: black;
+}
+
+#offer .black{
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    position:absolute;
+    z-index: 1;
+    opacity: 0.2;
+    background-color: black;
+}
+#offer .about{
+   width: 100%;
+   height: 200px;
+   padding: 20px;
+   background-color: rgba(0, 0, 0, 0.541);
+   margin-top: 150px;
+   position: absolute;
+   z-index: 9;
+   display: flex;
+   justify-content: space-around;
+}
+.about .book{
+   width: 45%;
+   height: 100px;
+   text-align: center;
+   color: white;
+   margin-top: 35px;
+   z-index: 99;
+}
+.about .book h1{
+   font-size: 28px;
+}
+.about .book p{
+   font-size: 14px;
+   color: #ddddddda;
+}
+
+.about .bookbtn{
+    width: 45%;
+    height: 100px;
+    text-align: center;
+    margin-top: 35px;
+ }
+.about .bookbtn .btn{
+    width: 140px;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    background: transparent;
+    color: #ddd;
+    font-size: 16px;
+    margin-top: 15px;
+ }
+.about .bookbtn .btn:hover{
+   background-color: var(--hovercolor);
+   border: none;
+}
+
+
+/*-------------- review -------------*/
+
+.review{
+    width: 100%;
+    height: fit-content;
+    padding: 45px;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.review .men{
+    width: 25%;
+    height: fit-content;
+   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+   border-radius: 10px;
+   background-image: linear-gradient(#9AECDB,#58B19F);
+   transition: 0.3s;
+}
+.review .men:hover{
+    transform: scale(1.1);
+}
+.review .men .inner{
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+}
+.review .men .inner i{
+    position: relative;
+    top: -15px;
+    left: -6px;
+}
+.review .men .inner img{
+    width: 28%;
+    height: 60px;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+     top: -8px; 
+     left: -2%; 
+}
+.review .men .para{
+    width: 100%;
+    height: fit-content;
+    padding: 25px;
+    text-align: justify;
+    font-size: 12px;
+    color: #111213;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 10px;
+}
+
+.footer{
+    height: fit-content;
+    width: 100%;
+    padding: 35px;
+   background-color: #111213;
+   color: #fff;
+}
+.footer h4{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.footer span{
+    font-size: 22px;
+}
+.footer-boss{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-boss p,li{
+    font-size: 14px;
+}
+.footer-boss h2{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.list{
+    width: 40%;
+    height: fit-content;
+    padding: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+.paru{
+    width: 45%;
+    height: fit-content;
+    padding: 20px;
+    font-size: 16px;
+}
